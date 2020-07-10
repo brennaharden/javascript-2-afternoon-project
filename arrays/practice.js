@@ -128,7 +128,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider(numbersArray){
+  var evensArray = []
+  var oddsArray = []
+  for (i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+      evensArray.push(numbersArray[i])
+    } else {
+      oddsArray.push(numbersArray[i])
+    }
+  } 
+  var newArray = [evensArray, oddsArray]
+  return newArray
+}
 
 
 
@@ -149,8 +161,17 @@ var getRandomArbitrary = function() {
   Loop through the array to see if randomNumber is in the array. 
   If it is, return true, if it's not, return false
 */
-
-//Code Here
+//Not passing tests in Jasmine
+// function finder(arr){
+  // var randomNumber = getRandomArbitrary()
+  // for (let i = 0; i < arr.length; i++){
+    // if (arr[i] === randomNumber){
+      // return true
+    // } else {
+      // return false
+    // }
+  // }
+// }
 
 
 
